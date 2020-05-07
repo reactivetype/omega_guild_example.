@@ -1,0 +1,16 @@
+- model: ''
+  operations:
+    add:
+      description: Sum all params from two yml config files
+      main: combine
+#      flags-import: all
+      requires:
+        - config: config1.yml
+        - config: config2.yml
+      
+      flags:
+        x:
+          type: float
+        a:
+          type: float
+
